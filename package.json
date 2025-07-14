@@ -1,0 +1,25 @@
+{
+  "name": "wallpaper-manager",
+  "version": "4.0.7",
+  "description": "A simple graphical program to manage Wallpaper Engine wallpapers locally.",
+  "main": "main.js",
+  "scripts": {
+    "start": "chcp 65001 & electron .",
+    "build": "echo \"Build script not implemented yet\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "wallpaper-engine",
+    "electron",
+    "react"
+  ],
+  "author": "Cline",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.0.0"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "vfs_tree": {
+    "name": "root",
+    "type": "folder",
+    "children": [
+      {
+        "name": "伊蕾娜",
+        "type": "folder",
+        "children": [
+          {
+            "id": "2851435774",
+            "type": "scene"
+          },
+          {
+            "id": "3260914166",
+            "type": "scene"
+          },
+          {
+            "id": "3009119342",
+            "type": "scene"
+          }
+        ],
+        "size": 0
+      }
+    ],
+    "size": 0
+  },
+  "wallpapers_meta": {
+    "2851435774": {
+      "mtime": 1752500725483.1157,
+      "size": 3790977,
+      "type": "scene"
+    },
+    "3009119342": {
+      "mtime": 1752500719475.0908,
+      "size": 2862822,
+      "type": "scene"
+    },
+    "3260914166": {
+      "mtime": 1752500743585.7148,
+      "size": 8402371,
+      "type": "scene"
+    }
+  }
+}

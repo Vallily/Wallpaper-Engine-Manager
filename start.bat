@@ -1,0 +1,3 @@
+@echo off
+echo Starting Wallpaper Manager...
+npm start

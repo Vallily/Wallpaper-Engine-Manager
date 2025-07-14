@@ -1,0 +1,60 @@
+/* --- Search (Simplified) --- */
+
+/* When search is active, the header actions container should align to the start */
+.header.search-active .header-actions {
+  flex-grow: 1;
+  justify-content: flex-start;
+}
+
+/*
+  The search button.
+  Simple, functional, no animations.
+*/
+.search-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-color);
+  font-size: 22px;
+  cursor: pointer;
+  padding: 8px;
+  line-height: 1;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Provide basic visual feedback on hover */
+.search-btn:hover {
+  background-color: var(--item-hover-bg);
+}
+
+/* Change color when search is active to indicate state */
+.header.search-active .search-btn {
+  color: var(--accent-color);
+}
+
+/* The search input field. No entry animation. */
+.search-input {
+  /* Let it take up all available space */
+  flex-grow: 1;
+  width: 100%;
+
+  /* Styling */
+  background-color: var(--bg-color-offset);
+  border: 1px solid var(--item-border);
+  color: var(--text-color);
+  padding: 8px 15px;
+  border-radius: 20px; /* Pill shape */
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px var(--accent-color-translucent);
+}
+
+.search-input::placeholder {
+  color: var(--text-color-secondary);
+  opacity: 0.8;
+}

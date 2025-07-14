@@ -1,0 +1,31 @@
+{
+  "openInExplorerLimit": 10,
+  "useCustomPath": false,
+  "customPath": "",
+  "viewMode": "grid",
+  "sortOptions": {
+    "sortBy": "dateAdded",
+    "sortOrder": "desc"
+  },
+  "filters": {
+    "type": [
+      "application",
+      "video",
+      "scene",
+      "web"
+    ],
+    "rating": [
+      "everyone"
+    ]
+  },
+  "autoHideAdultContent": true,
+  "vfsDisabled": false,
+  "enableExperimentalDecompression": true,
+  "bandizipPath": "",
+  "cheatEnginePath": "",
+  "commonPaths": [],
+  "enableDeletion": false,
+  "commonPasswords": [
+    ""
+  ]
+}

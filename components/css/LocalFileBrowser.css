@@ -1,0 +1,101 @@
+/* --- Local File Browser --- */
+.local-file-browser {
+  /*
+    Set size relative to the viewport (via the modal overlay).
+    This makes it feel like it occupies the main content area while being responsive.
+  */
+  width: 100%;
+  height: 100%;
+  
+  /* Retain flex properties for its children */
+  display: flex;
+  flex-direction: column;
+  
+  /* Add modal-like styling for consistency */
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: var(--sidebar-bg);
+  border-radius: 8px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.5);
+  border: 1px solid var(--item-border);
+}
+
+.local-file-browser-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--item-border);
+}
+
+.local-file-browser-header h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.local-file-browser-header button {
+  background-color: #c93c3c;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.local-file-browser-nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+  background-color: var(--sidebar-bg);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.local-file-browser-nav button {
+  background-color: #3e3e3e;
+  color: var(--text-color);
+  border: 1px solid #555;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.local-file-browser-nav button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.local-file-browser-list {
+  flex-grow: 1;
+  overflow-y: auto;
+  background-color: var(--sidebar-bg);
+  border-radius: 5px;
+  min-height: 0; /* Fix for flexbox scrolling issue */
+}
+
+.local-file-browser-item {
+  padding: 10px 15px;
+  border-bottom: 1px solid var(--item-border);
+  cursor: pointer;
+  user-select: none;
+}
+
+.local-file-browser-item:last-child {
+  border-bottom: none;
+}
+
+.local-file-browser-item:hover {
+  background-color: #3e3e3e;
+}
+
+.local-file-browser-item.is-selectable {
+  color: #e6ffed; /* Light green text for better contrast */
+  font-weight: bold;
+  background-color: #2a5c34; /* Dark green background */
+}
+
+.local-file-browser-item.is-selectable:hover {
+  background-color: #387043; /* A slightly lighter green for hover */
+}
